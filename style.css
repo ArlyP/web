@@ -1,7 +1,8 @@
 body{
     margin: 10px 50px;
     height: 100vh;
-    font-family: cursive;
+    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Teko', sans-serif; */
     background: #A1FFCE;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -134,3 +135,20 @@ footer{
 
   }
 
+
+  /* ANINMASI GAMBAR */
+
+.animasi {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
